@@ -1,0 +1,174 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header mt-4">
+      <h3 class="text-center" id="text3d">Alex Sandro</h3>
+      <strong id="text3d">AS</strong>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li aria-expanded="false" href="#angularSubmenu" data-toggle="collapse">
+        <a data-toggle="collapse" class="dropdown-toggle" [routerLink]="['/angular']" [routerLinkActive]="['active']">
+          <i>
+            <img width=" 27px" alt="Angular Logo" class="custon-icon"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+          </i> <span>Angular</span>
+        </a>
+        <ul class="collapse list-unstyled" id="angularSubmenu">
+          <li>
+            <a>Angular 1</a>
+          </li>
+          <li>
+            <a href="#">Home 2</a>
+          </li>
+          <li>
+            <a [routerLink]="['/angular']" [routerLinkActive]="['active']">Angular 3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['/javascript']" [routerLinkActive]="['active']">
+          <i>
+            <img width="18px" alt="Angular Logo" class="custon-icon-js" src="../assets/javascript.png">
+          </i>
+          Javascript
+        </a>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i>
+            <img width="18px" alt="Google cloud" class="custon-icon-js" src="../assets/cloud.png">
+          </i>
+          Google Cloud
+        </a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a [routerLink]="['/cloud']" [routerLinkActive]="['active']">Seccion 1</a>
+          </li>
+          <li>
+            <a href="#">Page 2</a>
+          </li>
+          <li>
+            <a href="#">Page 3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-image"></i>
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-question"></i>
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-paper-plane"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+      </li>
+      <li>
+        <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse" class="navbar-btn" (click)="abrirSidebar()">
+          <!-- <i class="fa fa-align-left"></i>
+          <span>Toggle Sidebar</span> -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-align-justify"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <!-- <a class="nav-link" href="#">Page</a> -->
+              <!-- <div class="icon twitter">&#xf099;</div> -->
+              <div class="icon twitter rounded">&#xf099;</div>
+              <!-- <div class="icon twitter eclipse">&#xf099;</div> -->
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Page</a> -->
+              <!-- <div class="icon linkedin">&#xf0e1;</div> -->
+              <div class="icon linkedin rounded">&#xf0e1;</div>
+              <!-- <div class="icon linkedin eclipse">&#xf0e1;</div> -->
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Page</a> -->
+              <!-- <div class="icon github">&#xf09b;</div> -->
+              <div class="icon github rounded">&#xf09b;</div>
+              <!-- <div class="icon github eclipse">&#xf09b;</div> -->
+            </li>
+
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon github">&#xf092;</div>
+              <div class="icon github rounded">&#xf092;</div>
+              <div class="icon github eclipse">&#xf092;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon facebook">&#xf09a;</div>
+              <div class="icon facebook rounded">&#xf09a;</div>
+              <div class="icon facebook eclipse">&#xf09a;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon dribbble">&#xf17d;</div>
+              <div class="icon dribbble rounded">&#xf17d;</div>
+              <div class="icon dribbble eclipse">&#xf17d;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon google">&#xf0d5;</div>
+              <div class="icon google rounded">&#xf0d5;</div>
+              <div class="icon google eclipse">&#xf0d5;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon rss">&#xf09e;</div>
+              <div class="icon rss rounded">&#xf09e;</div>
+              <div class="icon rss eclipse">&#xf09e;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon pinterest">&#xf0d2;</div>
+              <div class="icon pinterest rounded">&#xf0d2;</div>
+              <div class="icon pinterest eclipse">&#xf0d2;</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+              <div class="icon youtube">&#xf167;</div>
+              <div class="icon youtube rounded">&#xf167;</div>
+              <div class="icon youtube eclipse">&#xf167;</div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+  <!-- </div> -->
